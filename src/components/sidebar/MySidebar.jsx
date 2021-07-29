@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
 	Sidebar,
 	Segment,
@@ -51,9 +52,11 @@ const MySidebar = ({ show, eventHide }) => {
 					<Grid.Column>
 						<Menu text vertical fluid size="massive">
 							<Menu.Item>
-								<Menu.Header>Kas Masuk</Menu.Header>
+								<Menu.Header>Produk</Menu.Header>
 								<Menu.Menu>
-									<Menu.Item as="a">Setoran Pungutan Tabkop</Menu.Item>
+									<Menu.Item as={Link} to="/tabkop" onClick={eventHide}>
+										TABKOP ~ Tabungan Koperasi
+									</Menu.Item>
 									<Menu.Item as="a">Setoran Anggota</Menu.Item>
 									<Menu.Item as="a">Setoran Angsuran</Menu.Item>
 									<Menu.Item as="a">Setoran Lainnya</Menu.Item>

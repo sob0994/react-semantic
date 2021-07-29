@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./login/Login";
 
 const App = () => {
+	document.body.style.background = "#f0f0f0";
 	const { app, routes } = AppCode();
 	return (
 		<Router>
